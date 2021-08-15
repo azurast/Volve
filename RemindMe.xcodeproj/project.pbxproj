@@ -11,6 +11,7 @@
 		1B3DD4D426C8F1CC002F4E08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DD4D326C8F1CC002F4E08 /* ContentView.swift */; };
 		1B3DD4D626C8F1CC002F4E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DD4D526C8F1CC002F4E08 /* Assets.xcassets */; };
 		1B3DD4D926C8F1CC002F4E08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DD4D826C8F1CC002F4E08 /* Preview Assets.xcassets */; };
+		1B3DD4E226C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DD4E026C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		1B3DD4D526C8F1CC002F4E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B3DD4D826C8F1CC002F4E08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B3DD4DA26C8F1CC002F4E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B3DD4E126C8F30A002F4E08 /* RemindMeContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemindMeContainer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				1B3DD4D526C8F1CC002F4E08 /* Assets.xcassets */,
 				1B3DD4DA26C8F1CC002F4E08 /* Info.plist */,
 				1B3DD4D726C8F1CC002F4E08 /* Preview Content */,
+				1B3DD4E026C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld */,
 			);
 			path = RemindMe;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				1B3DD4D426C8F1CC002F4E08 /* ContentView.swift in Sources */,
 				1B3DD4D226C8F1CC002F4E08 /* RemindMeApp.swift in Sources */,
+				1B3DD4E226C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +332,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B3DD4E026C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B3DD4E126C8F30A002F4E08 /* RemindMeContainer.xcdatamodel */,
+			);
+			currentVersion = 1B3DD4E126C8F30A002F4E08 /* RemindMeContainer.xcdatamodel */;
+			path = RemindMeContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1B3DD4C626C8F1CC002F4E08 /* Project object */;
 }
