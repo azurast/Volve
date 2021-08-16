@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B238F3426C913E600CAB2BA /* PersonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B238F3326C913E600CAB2BA /* PersonCard.swift */; };
 		1B3DD4D226C8F1CC002F4E08 /* RemindMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DD4D126C8F1CC002F4E08 /* RemindMeApp.swift */; };
 		1B3DD4D426C8F1CC002F4E08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DD4D326C8F1CC002F4E08 /* ContentView.swift */; };
 		1B3DD4D626C8F1CC002F4E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DD4D526C8F1CC002F4E08 /* Assets.xcassets */; };
@@ -15,7 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B3DD4CE26C8F1CC002F4E08 /* RemindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B238F3326C913E600CAB2BA /* PersonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCard.swift; sourceTree = "<group>"; };
+		1B3DD4CE26C8F1CC002F4E08 /* Volve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Volve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3DD4D126C8F1CC002F4E08 /* RemindMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeApp.swift; sourceTree = "<group>"; };
 		1B3DD4D326C8F1CC002F4E08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B3DD4D526C8F1CC002F4E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B238F3226C913C700CAB2BA /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				1B238F3326C913E600CAB2BA /* PersonCard.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		1B3DD4C526C8F1CC002F4E08 = {
 			isa = PBXGroup;
 			children = (
@@ -46,7 +56,7 @@
 		1B3DD4CF26C8F1CC002F4E08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B3DD4CE26C8F1CC002F4E08 /* RemindMe.app */,
+				1B3DD4CE26C8F1CC002F4E08 /* Volve.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +64,7 @@
 		1B3DD4D026C8F1CC002F4E08 /* RemindMe */ = {
 			isa = PBXGroup;
 			children = (
+				1B238F3226C913C700CAB2BA /* Card */,
 				1B3DD4D126C8F1CC002F4E08 /* RemindMeApp.swift */,
 				1B3DD4D326C8F1CC002F4E08 /* ContentView.swift */,
 				1B3DD4D526C8F1CC002F4E08 /* Assets.xcassets */,
@@ -75,9 +86,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B3DD4CD26C8F1CC002F4E08 /* RemindMe */ = {
+		1B3DD4CD26C8F1CC002F4E08 /* Volve */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B3DD4DD26C8F1CC002F4E08 /* Build configuration list for PBXNativeTarget "RemindMe" */;
+			buildConfigurationList = 1B3DD4DD26C8F1CC002F4E08 /* Build configuration list for PBXNativeTarget "Volve" */;
 			buildPhases = (
 				1B3DD4CA26C8F1CC002F4E08 /* Sources */,
 				1B3DD4CB26C8F1CC002F4E08 /* Frameworks */,
@@ -87,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = RemindMe;
+			name = Volve;
 			productName = RemindMe;
-			productReference = 1B3DD4CE26C8F1CC002F4E08 /* RemindMe.app */;
+			productReference = 1B3DD4CE26C8F1CC002F4E08 /* Volve.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1B3DD4C926C8F1CC002F4E08 /* Build configuration list for PBXProject "RemindMe" */;
+			buildConfigurationList = 1B3DD4C926C8F1CC002F4E08 /* Build configuration list for PBXProject "Volve" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B3DD4CD26C8F1CC002F4E08 /* RemindMe */,
+				1B3DD4CD26C8F1CC002F4E08 /* Volve */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B238F3426C913E600CAB2BA /* PersonCard.swift in Sources */,
 				1B3DD4D426C8F1CC002F4E08 /* ContentView.swift in Sources */,
 				1B3DD4D226C8F1CC002F4E08 /* RemindMeApp.swift in Sources */,
 				1B3DD4E226C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld in Sources */,
@@ -281,7 +293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.asdev.RemindMe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asdev.Volve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,7 +315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.asdev.RemindMe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asdev.Volve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B3DD4C926C8F1CC002F4E08 /* Build configuration list for PBXProject "RemindMe" */ = {
+		1B3DD4C926C8F1CC002F4E08 /* Build configuration list for PBXProject "Volve" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B3DD4DB26C8F1CC002F4E08 /* Debug */,
@@ -322,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B3DD4DD26C8F1CC002F4E08 /* Build configuration list for PBXNativeTarget "RemindMe" */ = {
+		1B3DD4DD26C8F1CC002F4E08 /* Build configuration list for PBXNativeTarget "Volve" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B3DD4DE26C8F1CC002F4E08 /* Debug */,

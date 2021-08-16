@@ -72,6 +72,13 @@ struct ModalView: View {
     
     var body: some View {
         NavigationView {
+//            VStack(alignment: .center) {
+//                Image("av_1")
+//                    .resizable()
+//                    .frame(width: 100, height: 100)
+//                    .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
+//                    .aspectRatio(contentMode: .fit)
+//            }
             VStack(alignment: .leading, spacing: 8) {
                 Text("First Name")
                     .bold()
@@ -81,11 +88,16 @@ struct ModalView: View {
                 TextField("Last Name", text: $lastName)
                 Text("Category")
                     .bold()
-                Picker("Category", selection: $category) {
+                HStack {
                     ForEach(PersonCategory.allCases) {
-                        category in Text(category.rawValue.capitalized)
+                        category in CategoryCard(categoryName: category.rawValue.capitalized)
                     }
                 }
+//                Picker("Category", selection: $category) {
+//                    ForEach(PersonCategory.allCases) {
+//                        category in Text(category.rawValue.capitalized)
+//                    }
+//                }
                 Text("Birthday")
                     .bold()
                 DatePicker("Birthday", selection: $birthday, in: ...Date(), displayedComponents: .date)
@@ -120,12 +132,12 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                List {
+            ScrollView {
+                LazyVStack(spacing: 20) {
                     ForEach(vm.savedPeople) { entity in
-                        Text(entity.firstName ?? "No Name")
+                        PersonCard(person: entity)
                     }
-                }.listStyle(PlainListStyle())
+                }
             }
             .navigationTitle("Birthdays")
             .navigationBarItems(trailing: Button(action: {
@@ -142,6 +154,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(firstName: "")
+        Group {
+            ContentView(firstName: "")
+            ContentView(firstName: "")
+        }
     }
 }
