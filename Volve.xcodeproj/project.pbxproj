@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B1517F826CA19F60010A8D1 /* Volve.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Volve.xcdatamodel; sourceTree = "<group>"; };
 		1B238F3326C913E600CAB2BA /* PersonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCard.swift; sourceTree = "<group>"; };
 		1B3DD4CE26C8F1CC002F4E08 /* Volve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Volve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3DD4D126C8F1CC002F4E08 /* RemindMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeApp.swift; sourceTree = "<group>"; };
@@ -349,6 +350,7 @@
 		1B3DD4E026C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				1B1517F826CA19F60010A8D1 /* Volve.xcdatamodel */,
 				1B3DD4E126C8F30A002F4E08 /* RemindMeContainer.xcdatamodel */,
 			);
 			currentVersion = 1B3DD4E126C8F30A002F4E08 /* RemindMeContainer.xcdatamodel */;
