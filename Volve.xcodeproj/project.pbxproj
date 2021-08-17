@@ -25,6 +25,7 @@
 		1BCA0EEF26CB57790003EBC9 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA0EEE26CB57790003EBC9 /* SettingViewModel.swift */; };
 		1BDF377726CB69360082CAB9 /* Localizeable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BDF377926CB69360082CAB9 /* Localizeable.strings */; };
 		1BDF377C26CB69AF0082CAB9 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDF377B26CB69AF0082CAB9 /* Localization.swift */; };
+		1BDF377F26CB755A0082CAB9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDF377E26CB755A0082CAB9 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		1BDF377826CB69360082CAB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizeable.strings; sourceTree = "<group>"; };
 		1BDF377A26CB693D0082CAB9 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizeable.strings; sourceTree = "<group>"; };
 		1BDF377B26CB69AF0082CAB9 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		1BDF377E26CB755A0082CAB9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				1B3DD4D326C8F1CC002F4E08 /* ContentView.swift */,
 				1B3B4CCE26CA736E00E220EA /* ModalView.swift */,
+				1BDF377E26CB755A0082CAB9 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				1BCA0EE826CB54110003EBC9 /* ReminderOptions.swift in Sources */,
 				1B3B4CD426CA73E900E220EA /* DateHelper.swift in Sources */,
 				1B3DD4D426C8F1CC002F4E08 /* ContentView.swift in Sources */,
+				1BDF377F26CB755A0082CAB9 /* DetailView.swift in Sources */,
 				1B3B4CCF26CA736E00E220EA /* ModalView.swift in Sources */,
 				1B1517FF26CA481D0010A8D1 /* Volve.xcdatamodeld in Sources */,
 				1BDF377C26CB69AF0082CAB9 /* Localization.swift in Sources */,

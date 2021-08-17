@@ -21,7 +21,8 @@
 "oneWeekBefore" = "One week before";
 "twoWeeksBefore" = "Two weeks before";
 "threeWeeksBefore" = "Three weeks before";
-"locale" = "id";
+"locale" = "en";
 "friends" = "Friends";
 "family" = "Family";
 "work" = "Work";
+"detail" = "Detail";

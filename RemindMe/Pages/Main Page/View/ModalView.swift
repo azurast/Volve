@@ -61,7 +61,7 @@ struct ModalView: View {
                 }
                 DatePicker("dateOfBirth".localized(), selection: $birthday, in: ...Date(), displayedComponents: .date)
                     .datePickerStyle(CompactDatePickerStyle())
-                    .environment(\.locale, Locale(identifier: "id".localized()))
+                    .environment(\.locale, Locale(identifier: "locale".localized()))
             }
             .navigationTitle("addABirthday".localized())
             .navigationBarTitleDisplayMode(.inline)

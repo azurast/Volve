@@ -21,7 +21,8 @@
 "oneWeekBefore" = "Satu minggu sebelum";
 "twoWeeksBefore" = "Dua minggu sebelum";
 "threeWeeksBefore" = "Tiga minggu sebelum";
-"locale" = "en";
+"locale" = "id";
 "friends" = "Teman";
 "family" = "Keluarga";
 "work" = "Kerja";
+"detail" = "Detail";

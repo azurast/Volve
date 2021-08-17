@@ -10,15 +10,18 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var vm = CoreDataViewModel()
     @State private var showModal = false
+    @State private var showDetail = false
     
     var today = Date()
     
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVStack(spacing: 20) {
+                LazyVStack {
                     ForEach(vm.savedPeople.sorted(by: { $0.daysLeft < $1.daysLeft })) { entity in
-                        PersonCard(person: entity).id(entity.id)
+                        NavigationLink(destination: DetailView(person: entity)) {
+                            PersonCard(person: entity).id(entity.id)
+                        }
                     }
                 }
             }
