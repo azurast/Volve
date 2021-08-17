@@ -14,6 +14,7 @@ struct PersonCard: View {
     var today = Date()
     
     var body: some View {
+        
         HStack(alignment: .center, spacing: 10) {
             Image("av_\(person.photo)")
                 .resizable()

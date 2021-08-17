@@ -8,18 +8,19 @@
 import Foundation
 
 enum StarSign: String, CaseIterable, Identifiable {
-    case aries
-    case taurus
-    case gemini
-    case cancer
-    case leo
-    case virgo
-    case libra
-    case scorpio
-    case sagittarius
-    case capricorn
-    case aquarius
-    case pisces
+    case aries = "Aries♈︎";
+    case taurus = "Taurus♉︎";
+    case gemini = "Gemini♊︎";
+    case cancer = "Cancer♋︎";
+    case leo = "Leo♌︎";
+    case virgo = "Virgo♍︎";
+    case libra = "Libra♎︎";
+    case scorpio = "Scorpio♏︎";
+    case sagittarius = "Sagittarius♐︎";
+    case capricorn = "Capricorn♑︎";
+    case aquarius = "Aquarius♒︎";
+    case pisces = "Pisces♓︎";
+    
     var id: String { self.rawValue }
 }
 
