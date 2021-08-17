@@ -25,11 +25,9 @@ struct ContentView: View {
             .navigationTitle("Birthdays")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        showModal.toggle()
-                    }, label: {
-                        Image.init(systemName: "gearshape")
-                    })
+                    NavigationLink(destination: SettingView()) {
+                        Button(action: {}, label: {Image.init(systemName: "gearshape")})
+                    }
                     Button(action: {
                         showModal.toggle()
                     }, label: {
@@ -38,7 +36,7 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showModal, content: {
-                AddModalView(vm: vm)
+                ModalView(vm: vm)
             })
         }
     }

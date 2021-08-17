@@ -1,5 +1,5 @@
 //
-//  AddModalView.swift
+//  ModalView.swift
 //  Volve
 //
 //  Created by Azura Sakan Taufik on 16/08/21.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct AddModalView: View {
+struct ModalView: View {
     @StateObject var vm : CoreDataViewModel
     @Environment(\.presentationMode) var presentationMode
     @State var showAvatarOptions : Bool = false
