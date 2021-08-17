@@ -49,7 +49,7 @@ struct PersonCard: View {
             Spacer()
             VStack {
                 Text(String(person.daysLeft)).foregroundColor(.accentColor).font(.callout).bold()
-                Text("days left").foregroundColor(.secondary).font(.caption)
+                Text("daysLeft".localized()).foregroundColor(.secondary).font(.caption)
             }.padding(.trailing, 20)
         }
         .frame(maxWidth: .infinity, minHeight: 100, alignment: .leading)

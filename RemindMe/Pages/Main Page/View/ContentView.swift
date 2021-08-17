@@ -22,7 +22,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Birthdays")
+            .navigationTitle("birthdays".localized())
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     NavigationLink(destination: SettingView()) {

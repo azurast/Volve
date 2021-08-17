@@ -31,7 +31,7 @@ struct ModalView: View {
                         Spacer()
                     }
                     Button(action: { showAvatarOptions = !showAvatarOptions }, label: {
-                        Text("Change Avatar")
+                        Text("changeAvatar".localized())
                             .font(.caption)
                             .bold()
                             .foregroundColor(.accentColor)
@@ -52,29 +52,30 @@ struct ModalView: View {
                         }
                     }
                 }
-                TextField("First Name", text: $firstName)
-                TextField("Last Name", text: $lastName)
-                Picker("Category", selection: $category) {
+                TextField("firstName".localized(), text: $firstName)
+                TextField("lastName".localized(), text: $lastName)
+                Picker("category".localized(), selection: $category) {
                     ForEach(PersonCategory.allCases) {
-                        category in Text(category.rawValue.capitalized)
+                        category in Text(category.rawValue.localized())
                     }
                 }
-                DatePicker("Birthday", selection: $birthday, in: ...Date(), displayedComponents: .date)
+                DatePicker("dateOfBirth".localized(), selection: $birthday, in: ...Date(), displayedComponents: .date)
                     .datePickerStyle(CompactDatePickerStyle())
+                    .environment(\.locale, Locale(identifier: "id".localized()))
             }
-            .navigationTitle("Add a Birthday")
+            .navigationTitle("addABirthday".localized())
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(
                 leading: Button(action: {
                     presentationMode.wrappedValue.dismiss()
                 }, label: {
-                    Text("Cancel")
+                    Text("cancel".localized())
                 }),
                 trailing: Button(action: {
                     vm.addPerson(firstName: firstName, lastName: lastName, birthday: birthday, category: category, photo: selectedImageIndex)
                     presentationMode.wrappedValue.dismiss()
                 }, label: {
-                    Text("Add")
+                    Text("add".localized())
                 })
             )
         }

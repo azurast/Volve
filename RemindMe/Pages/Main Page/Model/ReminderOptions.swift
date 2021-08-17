@@ -18,10 +18,3 @@ enum ReminderOptions: Int, CaseIterable, Identifiable {
     
     var id: Int { self.rawValue }
 }
-
-enum LanguageOptions: String, CaseIterable, Identifiable {
-    case english
-    case bahasa
-    
-    var id: String { self.rawValue }
-}
