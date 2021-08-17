@@ -7,24 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1517FF26CA481D0010A8D1 /* Volve.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B1517FD26CA481D0010A8D1 /* Volve.xcdatamodeld */; };
 		1B238F3426C913E600CAB2BA /* PersonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B238F3326C913E600CAB2BA /* PersonCard.swift */; };
+		1B3B4CBF26CA6B6400E220EA /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B4CBE26CA6B6400E220EA /* CardModifier.swift */; };
+		1B3B4CC126CA6BE300E220EA /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B4CC026CA6BE300E220EA /* ImageModifier.swift */; };
+		1B3B4CCA26CA72DA00E220EA /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B4CC926CA72DA00E220EA /* CoreDataViewModel.swift */; };
+		1B3B4CCD26CA731F00E220EA /* PersonCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B4CCC26CA731F00E220EA /* PersonCategory.swift */; };
+		1B3B4CCF26CA736E00E220EA /* AddModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B4CCE26CA736E00E220EA /* AddModalView.swift */; };
+		1B3B4CD426CA73E900E220EA /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B4CD326CA73E900E220EA /* DateHelper.swift */; };
 		1B3DD4D226C8F1CC002F4E08 /* RemindMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DD4D126C8F1CC002F4E08 /* RemindMeApp.swift */; };
 		1B3DD4D426C8F1CC002F4E08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DD4D326C8F1CC002F4E08 /* ContentView.swift */; };
 		1B3DD4D626C8F1CC002F4E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DD4D526C8F1CC002F4E08 /* Assets.xcassets */; };
 		1B3DD4D926C8F1CC002F4E08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DD4D826C8F1CC002F4E08 /* Preview Assets.xcassets */; };
-		1B3DD4E226C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DD4E026C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld */; };
+		1BCA0EE226CB34A50003EBC9 /* StarSignCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA0EE126CB34A50003EBC9 /* StarSignCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B1517F826CA19F60010A8D1 /* Volve.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Volve.xcdatamodel; sourceTree = "<group>"; };
+		1B1517FE26CA481D0010A8D1 /* Volve.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Volve.xcdatamodel; sourceTree = "<group>"; };
 		1B238F3326C913E600CAB2BA /* PersonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCard.swift; sourceTree = "<group>"; };
+		1B3B4CBE26CA6B6400E220EA /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
+		1B3B4CC026CA6BE300E220EA /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
+		1B3B4CC926CA72DA00E220EA /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
+		1B3B4CCC26CA731F00E220EA /* PersonCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCategory.swift; sourceTree = "<group>"; };
+		1B3B4CCE26CA736E00E220EA /* AddModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModalView.swift; sourceTree = "<group>"; };
+		1B3B4CD326CA73E900E220EA /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		1B3DD4CE26C8F1CC002F4E08 /* Volve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Volve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3DD4D126C8F1CC002F4E08 /* RemindMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeApp.swift; sourceTree = "<group>"; };
 		1B3DD4D326C8F1CC002F4E08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B3DD4D526C8F1CC002F4E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B3DD4D826C8F1CC002F4E08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B3DD4DA26C8F1CC002F4E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B3DD4E126C8F30A002F4E08 /* RemindMeContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemindMeContainer.xcdatamodel; sourceTree = "<group>"; };
+		1BCA0EDE26CB2D4A0003EBC9 /* Volve v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Volve v2.xcdatamodel"; sourceTree = "<group>"; };
+		1BCA0EE126CB34A50003EBC9 /* StarSignCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSignCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +60,76 @@
 			path = Card;
 			sourceTree = "<group>";
 		};
+		1B3B4CC226CA6ECA00E220EA /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				1B3B4CBE26CA6B6400E220EA /* CardModifier.swift */,
+				1B3B4CC026CA6BE300E220EA /* ImageModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		1B3B4CC626CA727B00E220EA /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+				1B3B4CCB26CA730C00E220EA /* Model */,
+				1B3B4CC826CA729500E220EA /* View Model */,
+				1B3B4CC726CA728C00E220EA /* View */,
+			);
+			path = "Main Page";
+			sourceTree = "<group>";
+		};
+		1B3B4CC726CA728C00E220EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B3DD4D326C8F1CC002F4E08 /* ContentView.swift */,
+				1B3B4CCE26CA736E00E220EA /* AddModalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B3B4CC826CA729500E220EA /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B3B4CC926CA72DA00E220EA /* CoreDataViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		1B3B4CCB26CA730C00E220EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B3B4CCC26CA731F00E220EA /* PersonCategory.swift */,
+				1BCA0EE126CB34A50003EBC9 /* StarSignCategory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B3B4CD026CA73C200E220EA /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				1B3B4CC626CA727B00E220EA /* Main Page */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		1B3B4CD126CA73C600E220EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1B3B4CC226CA6ECA00E220EA /* Modifiers */,
+				1B238F3226C913C700CAB2BA /* Card */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1B3B4CD226CA73D700E220EA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1B3B4CD326CA73E900E220EA /* DateHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		1B3DD4C526C8F1CC002F4E08 = {
 			isa = PBXGroup;
 			children = (
@@ -65,13 +149,14 @@
 		1B3DD4D026C8F1CC002F4E08 /* RemindMe */ = {
 			isa = PBXGroup;
 			children = (
-				1B238F3226C913C700CAB2BA /* Card */,
+				1B3B4CD226CA73D700E220EA /* Helpers */,
+				1B3B4CD126CA73C600E220EA /* Components */,
+				1B3B4CD026CA73C200E220EA /* Pages */,
+				1B1517FD26CA481D0010A8D1 /* Volve.xcdatamodeld */,
 				1B3DD4D126C8F1CC002F4E08 /* RemindMeApp.swift */,
-				1B3DD4D326C8F1CC002F4E08 /* ContentView.swift */,
 				1B3DD4D526C8F1CC002F4E08 /* Assets.xcassets */,
 				1B3DD4DA26C8F1CC002F4E08 /* Info.plist */,
 				1B3DD4D726C8F1CC002F4E08 /* Preview Content */,
-				1B3DD4E026C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld */,
 			);
 			path = RemindMe;
 			sourceTree = "<group>";
@@ -154,9 +239,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B238F3426C913E600CAB2BA /* PersonCard.swift in Sources */,
+				1B3B4CBF26CA6B6400E220EA /* CardModifier.swift in Sources */,
+				1B3B4CCA26CA72DA00E220EA /* CoreDataViewModel.swift in Sources */,
+				1B3B4CC126CA6BE300E220EA /* ImageModifier.swift in Sources */,
+				1B3B4CCD26CA731F00E220EA /* PersonCategory.swift in Sources */,
+				1B3B4CD426CA73E900E220EA /* DateHelper.swift in Sources */,
 				1B3DD4D426C8F1CC002F4E08 /* ContentView.swift in Sources */,
+				1B3B4CCF26CA736E00E220EA /* AddModalView.swift in Sources */,
+				1B1517FF26CA481D0010A8D1 /* Volve.xcdatamodeld in Sources */,
 				1B3DD4D226C8F1CC002F4E08 /* RemindMeApp.swift in Sources */,
-				1B3DD4E226C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld in Sources */,
+				1BCA0EE226CB34A50003EBC9 /* StarSignCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,14 +439,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1B3DD4E026C8F30A002F4E08 /* RemindMeContainer.xcdatamodeld */ = {
+		1B1517FD26CA481D0010A8D1 /* Volve.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1B1517F826CA19F60010A8D1 /* Volve.xcdatamodel */,
-				1B3DD4E126C8F30A002F4E08 /* RemindMeContainer.xcdatamodel */,
+				1BCA0EDE26CB2D4A0003EBC9 /* Volve v2.xcdatamodel */,
+				1B1517FE26CA481D0010A8D1 /* Volve.xcdatamodel */,
 			);
-			currentVersion = 1B3DD4E126C8F30A002F4E08 /* RemindMeContainer.xcdatamodel */;
-			path = RemindMeContainer.xcdatamodeld;
+			currentVersion = 1BCA0EDE26CB2D4A0003EBC9 /* Volve v2.xcdatamodel */;
+			path = Volve.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

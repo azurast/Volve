@@ -5,10 +5,12 @@
         <attribute name="category" optional="YES" attributeType="String"/>
         <attribute name="daysLeft" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="lastName" optional="YES" attributeType="String"/>
-        <attribute name="photo" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="starSign" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="PersonEntity" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="PersonEntity" positionX="-63" positionY="-18" width="128" height="149"/>
     </elements>
 </model>
