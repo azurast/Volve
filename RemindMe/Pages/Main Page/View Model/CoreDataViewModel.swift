@@ -65,22 +65,28 @@ class CoreDataViewModel: ObservableObject {
     func getDaysLeftFromToday(from birthDate: Date, until currentDate: Date) -> Int32 {
         let calendar = Calendar(identifier: .gregorian)
         
-        let monthComp = calendar.dateComponents([.month], from: birthDate)
-        let dayComp = calendar.dateComponents([.day], from: birthDate)
-        
-        let birthdateComponents = DateComponents(month: monthComp.month, day: dayComp.day)
+        let birthdayComponents = calendar.dateComponents([.day, .month], from: birthDate)
+        var birthdayDateComponents = DateComponents(month: birthdayComponents.month, day: birthdayComponents.day)
+        let currentDateComponents = DateComponents(year: calendar.dateComponents([.year], from: currentDate).year)
        
-        if let nextBirthday = Calendar.current.nextDate(after: currentDate, matching: birthdateComponents, matchingPolicy: .strict),
+        // MARK - If birthday is on Feb 29
+        if let isLeapYear = DateComponents(calendar: .current, year: currentDateComponents.year).date?.isLeapYear {
+            if !isLeapYear {
+                if birthdayDateComponents.month == 2 {
+                 if birthdayDateComponents.day == 29 {
+                    birthdayDateComponents = DateComponents(month: 2, day: 28)
+                 }
+                }
+            }
+        }
+        
+        if let nextBirthday = Calendar.current.nextDate(after: currentDate, matching: birthdayDateComponents, matchingPolicy: .strict),
            let daysLeftUntilNextBirthday = Calendar.current.dateComponents([.day], from: currentDate, to: nextBirthday).day {
             // TODO : Ceiling
             print("days left \(daysLeftUntilNextBirthday)")
             return Int32(daysLeftUntilNextBirthday)
         }
         return 0
-        
-    }
-    
-    func getStarSign(birthday : Date) {
         
     }
     

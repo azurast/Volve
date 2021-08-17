@@ -5,7 +5,6 @@
 //  Created by Azura Sakan Taufik on 16/08/21.
 //
 
-import Foundation
 import SwiftUI
 
 struct ModalView: View {
