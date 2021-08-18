@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct SettingView: View {
-    @State var isNotificationsOn : Bool = false
+    @State var isNotificationsOn : Bool = UserSettingsManager.shared.getReminder()
     @State var selectedReminder : ReminderOptions = .theday
     
     var body: some View {
         Form {
             Toggle(isOn: $isNotificationsOn) {
                 Text("turnOnNotifications".localized())
+            }.onTapGesture {
+                print("Tapped")
+                UserSettingsManager.shared.setReminder(isOn: isNotificationsOn)
             }
             if isNotificationsOn {
                 Picker("selectedReminder".localized(), selection: $selectedReminder) {

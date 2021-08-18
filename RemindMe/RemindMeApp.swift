@@ -10,8 +10,11 @@ import SwiftUI
 @main
 struct RemindMeApp: App {
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            ContentView().onAppear(){
+                UserSettingsManager.shared.setDefaultValues()
+            }
         }
     }
 }

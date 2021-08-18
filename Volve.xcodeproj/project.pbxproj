@@ -27,6 +27,7 @@
 		1BDF377C26CB69AF0082CAB9 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDF377B26CB69AF0082CAB9 /* Localization.swift */; };
 		1BDF377F26CB755A0082CAB9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDF377E26CB755A0082CAB9 /* DetailView.swift */; };
 		FB14B44726CDC28800E07A46 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14B44626CDC28800E07A46 /* NotificationManager.swift */; };
+		FB14B44926CDCD1100E07A46 /* UserSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14B44826CDCD1100E07A46 /* UserSettingsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		1BDF377B26CB69AF0082CAB9 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		1BDF377E26CB755A0082CAB9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FB14B44626CDC28800E07A46 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		FB14B44826CDCD1100E07A46 /* UserSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				1B3B4CD326CA73E900E220EA /* DateHelper.swift */,
 				FB14B44626CDC28800E07A46 /* NotificationManager.swift */,
+				FB14B44826CDCD1100E07A46 /* UserSettingsManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				1B3B4CC126CA6BE300E220EA /* ImageModifier.swift in Sources */,
 				1B3B4CCD26CA731F00E220EA /* PersonCategory.swift in Sources */,
 				1BCA0EE826CB54110003EBC9 /* ReminderOptions.swift in Sources */,
+				FB14B44926CDCD1100E07A46 /* UserSettingsManager.swift in Sources */,
 				1B3B4CD426CA73E900E220EA /* DateHelper.swift in Sources */,
 				1B3DD4D426C8F1CC002F4E08 /* ContentView.swift in Sources */,
 				1BDF377F26CB755A0082CAB9 /* DetailView.swift in Sources */,
