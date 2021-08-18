@@ -26,6 +26,7 @@
 		1BDF377726CB69360082CAB9 /* Localizeable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BDF377926CB69360082CAB9 /* Localizeable.strings */; };
 		1BDF377C26CB69AF0082CAB9 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDF377B26CB69AF0082CAB9 /* Localization.swift */; };
 		1BDF377F26CB755A0082CAB9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDF377E26CB755A0082CAB9 /* DetailView.swift */; };
+		FB14B44726CDC28800E07A46 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14B44626CDC28800E07A46 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		1BDF377A26CB693D0082CAB9 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizeable.strings; sourceTree = "<group>"; };
 		1BDF377B26CB69AF0082CAB9 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		1BDF377E26CB755A0082CAB9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FB14B44626CDC28800E07A46 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				1B3B4CD326CA73E900E220EA /* DateHelper.swift */,
+				FB14B44626CDC28800E07A46 /* NotificationManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B238F3426C913E600CAB2BA /* PersonCard.swift in Sources */,
+				FB14B44726CDC28800E07A46 /* NotificationManager.swift in Sources */,
 				1BCA0EEF26CB57790003EBC9 /* SettingViewModel.swift in Sources */,
 				1B3B4CBF26CA6B6400E220EA /* CardModifier.swift in Sources */,
 				1B3B4CCA26CA72DA00E220EA /* CoreDataViewModel.swift in Sources */,

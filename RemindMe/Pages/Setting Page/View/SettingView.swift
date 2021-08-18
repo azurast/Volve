@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingView: View {
-    @State var isNotificationsOn : Bool = true
+    @State var isNotificationsOn : Bool = false
     @State var selectedReminder : ReminderOptions = .theday
     
     var body: some View {

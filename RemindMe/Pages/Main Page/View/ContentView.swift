@@ -11,6 +11,7 @@ struct ContentView: View {
     @ObservedObject var vm = CoreDataViewModel()
     @State private var showModal = false
     @State private var showDetail = false
+    @State private var showSetting = false
     
     var today = Date()
     
@@ -28,9 +29,18 @@ struct ContentView: View {
             .navigationTitle("birthdays".localized())
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: SettingView()) {
-                        Button(action: {}, label: {Image.init(systemName: "gearshape")})
-                    }
+                    Button(action: {
+                        NotificationManager.shared.requestAuthorization {
+                            granted in
+                            if granted {
+                                showSetting = true
+                                print("this block runs")
+                            }
+                        }
+                    }, label: {Image.init(systemName: "gearshape")})
+                    .overlay(
+                        NavigationLink(destination: SettingView(), isActive: $showSetting) { EmptyView()
+                        })
                     Button(action: {
                         showModal.toggle()
                     }, label: {

@@ -39,7 +39,7 @@ extension Date {
                 return Volve.StarSign.aquarius.rawValue
             }
         case 2:
-            if day < 29 {
+            if day < 19 {
                 return Volve.StarSign.aquarius.rawValue
             } else {
                 return Volve.StarSign.pisces.rawValue
