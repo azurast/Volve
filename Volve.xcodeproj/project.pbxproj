@@ -28,6 +28,7 @@
 		1BDF377F26CB755A0082CAB9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDF377E26CB755A0082CAB9 /* DetailView.swift */; };
 		FB14B44726CDC28800E07A46 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14B44626CDC28800E07A46 /* NotificationManager.swift */; };
 		FB14B44926CDCD1100E07A46 /* UserSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14B44826CDCD1100E07A46 /* UserSettingsManager.swift */; };
+		FB14B44B26CDD7F800E07A46 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14B44A26CDD7F800E07A46 /* Reminder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		1BDF377E26CB755A0082CAB9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FB14B44626CDC28800E07A46 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		FB14B44826CDCD1100E07A46 /* UserSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsManager.swift; sourceTree = "<group>"; };
+		FB14B44A26CDD7F800E07A46 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				1B3B4CCC26CA731F00E220EA /* PersonCategory.swift */,
 				1BCA0EE126CB34A50003EBC9 /* StarSignCategory.swift */,
 				1BCA0EE726CB54110003EBC9 /* ReminderOptions.swift */,
+				FB14B44A26CDD7F800E07A46 /* Reminder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				1BDF377C26CB69AF0082CAB9 /* Localization.swift in Sources */,
 				1BCA0EE626CB51D10003EBC9 /* SettingView.swift in Sources */,
 				1B3DD4D226C8F1CC002F4E08 /* RemindMeApp.swift in Sources */,
+				FB14B44B26CDD7F800E07A46 /* Reminder.swift in Sources */,
 				1BCA0EE226CB34A50003EBC9 /* StarSignCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

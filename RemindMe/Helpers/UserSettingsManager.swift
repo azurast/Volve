@@ -12,9 +12,9 @@ class UserSettingsManager : ObservableObject {
     @Published var userDefaults = UserDefaults.standard
     
     enum Keys : String, CaseIterable, Identifiable {
-        case isFirstTime
-        case isReminderOn
-        case daysBefore
+        case isFirstTime // Bool
+        case isReminderOn // Bool
+        case daysBefore // Int
         
         var id: String { self.rawValue }
     }
@@ -39,5 +39,9 @@ class UserSettingsManager : ObservableObject {
     // MARK: - Set the number of days before to remind
     func setReminderDays(daysBefore : ReminderOptions) {
         userDefaults.setValue(daysBefore.id, forKey: Keys.daysBefore.id)
+    }
+    
+    func getReminderDays() -> Int {
+        return userDefaults.integer(forKey: Keys.daysBefore.id)
     }
 }

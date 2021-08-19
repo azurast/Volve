@@ -12,7 +12,11 @@ struct DetailView: View {
     
     var body: some View {
         NavigationView {
-            Text(person.firstName ?? "No Name")
+            Button(action: {
+                NotificationManager.shared.scheduleNotifications(person: person)
+            }) {
+                Text("Check Reminder Date")
+            }
         }.navigationTitle(person.firstName ?? "detail".localized())
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
