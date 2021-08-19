@@ -16,7 +16,6 @@ struct SettingView: View {
             Toggle(isOn: $isNotificationsOn) {
                 Text("turnOnNotifications".localized())
             }.onTapGesture {
-                print("Tapped")
                 UserSettingsManager.shared.setReminder(isOn: isNotificationsOn)
             }
             if isNotificationsOn {
@@ -28,7 +27,10 @@ struct SettingView: View {
                     Text("oneWeekBefore".localized()).tag(ReminderOptions.oneweek)
                     Text("twoWeeksBefore".localized()).tag(ReminderOptions.twoweeks)
                     Text("threeWeeksBefore".localized()).tag(ReminderOptions.threeweeks)
-                }
+                }.onChange(of: selectedReminder, perform: {
+                    value in
+                        UserSettingsManager.shared.setReminderDays(daysBefore: value)
+                })
             }
             Text("testPushNotif".localized())
         }

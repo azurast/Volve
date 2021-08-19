@@ -51,7 +51,7 @@ struct ContentView: View {
             .sheet(isPresented: $showModal, content: {
                 ModalView(vm: vm)
             })
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
