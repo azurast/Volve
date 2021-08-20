@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct SettingView: View {
+    @ObservedObject var vm = CoreDataViewModel()
     @State var isNotificationsOn : Bool = UserSettingsManager.shared.getReminder()
-    @State var selectedReminder : ReminderOptions = .theday
+    @State var selectedReminder : ReminderOptions = ReminderOptions(rawValue: UserSettingsManager.shared.getReminderDays()) ?? .theday
     
     var body: some View {
         Form {
@@ -30,6 +31,7 @@ struct SettingView: View {
                 }.onChange(of: selectedReminder, perform: {
                     value in
                         UserSettingsManager.shared.setReminderDays(daysBefore: value)
+                    vm.updateReminderDate()
                 })
             }
             Text("testPushNotif".localized())

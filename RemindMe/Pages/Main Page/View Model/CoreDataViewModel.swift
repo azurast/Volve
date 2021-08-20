@@ -123,4 +123,23 @@ class CoreDataViewModel: ObservableObject {
         return Calendar.current.date(from: reminderComponents) ?? Date()
     }
     
+    // TODO : this works only after closing and reopening the app
+    func updateReminderDate() {
+        print("update Reminder jalan")
+        let request = NSFetchRequest<PersonEntity>(entityName: "PersonEntity")
+        let sort = NSSortDescriptor(keyPath: \PersonEntity.daysLeft, ascending: true)
+        request.sortDescriptors = [sort]
+        do {
+            savedPeople = try container.viewContext.fetch(request)
+            for person in savedPeople {
+                container.viewContext.performAndWait {
+                    person.reminderDate = getReminderDate(birthday:person.birthday ?? today)
+                    try? container.viewContext.save()
+                }
+            }
+        } catch let error {
+            print("ERROR UPDATING REMINDER DATE DATA REQUEST. \(error)")
+        }
+    }
+    
 }
