@@ -8,9 +8,10 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="lastName" optional="YES" attributeType="String"/>
         <attribute name="photo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reminderDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="starSign" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="PersonEntity" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="PersonEntity" positionX="-63" positionY="-18" width="128" height="164"/>
     </elements>
 </model>

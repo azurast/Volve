@@ -40,46 +40,17 @@ class NotificationManager: ObservableObject {
         
         var trigger: UNNotificationTrigger?
         
-        if let birthday = person.birthday {
-            // Reminder Components
-            let daysBefore = UserSettingsManager.shared.getReminderDays()
-            
-            var reminderComponents = DateComponents()
-            reminderComponents.day = -daysBefore
-            
-            // TODO : check without taking into acount year & all other logic
-            if birthday.month < Date().month {
-                reminderComponents.year = Date().year - birthday.year + 1
-            } else {
-                if birthday.month == Date().month {
-                    if birthday.day < Date().day {
-                        
-                    }
-                } else  {
-                    reminderComponents.year = Date().year - birthday.year
-                }
-            }
-            
-            // FOR DEBUG ONLY
-            let reminderDate = Calendar.current.date(byAdding: reminderComponents, to: birthday)
-            
-            reminderComponents.day = reminderDate?.day
-            reminderComponents.month = reminderDate?.month
-            reminderComponents.year = reminderDate?.year
-            reminderComponents.hour = 8
-            reminderComponents.minute = 0
-            
-            dump("reminderDate is \(String(describing: reminderComponents))")
-            
-            trigger = UNCalendarNotificationTrigger(dateMatching: reminderComponents, repeats: true)
-            
-            let request = UNNotificationRequest(
-                identifier: UUID().uuidString,
-                content: content,
-                trigger: trigger)
-            
-            UNUserNotificationCenter.current().add(request)
-        }
+        let reminderComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: person.birthday!)
+        
+        trigger = UNCalendarNotificationTrigger(dateMatching: reminderComponents, repeats: true)
+        
+        let request = UNNotificationRequest(
+            identifier: UUID().uuidString,
+            content: content,
+            trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request)
+    
     }
     
 }

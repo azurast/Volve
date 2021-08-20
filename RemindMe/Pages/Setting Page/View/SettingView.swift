@@ -16,7 +16,7 @@ struct SettingView: View {
             Toggle(isOn: $isNotificationsOn) {
                 Text("turnOnNotifications".localized())
             }.onTapGesture {
-                UserSettingsManager.shared.setReminder(isOn: isNotificationsOn)
+                UserSettingsManager.shared.setReminder(isOn: !isNotificationsOn)
             }
             if isNotificationsOn {
                 Picker("selectedReminder".localized(), selection: $selectedReminder) {

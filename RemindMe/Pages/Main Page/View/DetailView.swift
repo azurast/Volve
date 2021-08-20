@@ -9,13 +9,18 @@ import SwiftUI
 
 struct DetailView: View {
     @State var person : PersonEntity
-    
+        
     var body: some View {
         NavigationView {
-            Button(action: {
-                NotificationManager.shared.scheduleNotifications(person: person)
-            }) {
-                Text("Check Reminder Date")
+            VStack {
+                Button(action: {
+                    NotificationManager.shared.scheduleNotifications(person: person)
+                }) {
+                    Text("Check Reminder Date")
+                }
+                if let reminderDate = person.reminderDate {
+                    Text("Reminder set on \(reminderDate.toString)")
+                }
             }
         }.navigationTitle(person.firstName ?? "detail".localized())
         .navigationBarTitleDisplayMode(.inline)

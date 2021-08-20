@@ -50,6 +50,7 @@ class CoreDataViewModel: ObservableObject {
         newPerson.photo = photo
         newPerson.id = UUID()
         newPerson.starSign = birthday.StarSign()
+        newPerson.reminderDate = getReminderDate(birthday: birthday)
         saveData()
     }
     
@@ -88,6 +89,38 @@ class CoreDataViewModel: ObservableObject {
         }
         return 0
         
+    }
+    
+    func getReminderDate(birthday: Date) -> Date {
+        
+        let daysBefore = UserSettingsManager.shared.getReminderDays()
+        
+        var reminderComponents = DateComponents()
+        reminderComponents.day = -daysBefore
+        
+        // TODO : check without taking into acount year & all other logic
+        if birthday.month < Date().month {
+            reminderComponents.year = Date().year - birthday.year + 1
+        } else {
+            if birthday.month == Date().month {
+                if birthday.day < Date().day {
+                    
+                }
+            } else  {
+                reminderComponents.year = Date().year - birthday.year
+            }
+        }
+        
+        // FOR DEBUG ONLY
+        let reminderDate = Calendar.current.date(byAdding: reminderComponents, to: birthday)
+        
+        reminderComponents.day = reminderDate?.day
+        reminderComponents.month = reminderDate?.month
+        reminderComponents.year = reminderDate?.year
+        reminderComponents.hour = 8
+        reminderComponents.minute = 0
+        
+        return Calendar.current.date(from: reminderComponents) ?? Date()
     }
     
 }

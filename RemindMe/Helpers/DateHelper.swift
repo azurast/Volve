@@ -20,7 +20,7 @@ extension Date {
     var day: Int { Calendar.current.component(.day, from: self) }
     var hour: Int { Calendar.current.component(.hour, from: self) }
     var minute: Int { Calendar.current.component(.minute, from: self) }
-
+    
     var isLeapYear: Bool { Calendar.current.range(of: .day, in: .year, for: self)!.count == 366 }
 
     // find the leap year
@@ -31,4 +31,6 @@ extension Date {
         }
         return year
     }
+    
+    var toString : String { createFormatter().string(from: self) }
 }
