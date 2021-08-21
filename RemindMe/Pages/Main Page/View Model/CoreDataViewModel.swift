@@ -35,6 +35,7 @@ class CoreDataViewModel: ObservableObject {
             for people in savedPeople {
                 people.setValue(getDaysLeftFromToday(from: people.birthday ?? today, until: today), forKey: "daysLeft")
             }
+            print("FETCHING PERFORMED")
         } catch let error {
             print("ERROR FETCHING CORE DATA REQUEST. \(error)")
         }
@@ -84,7 +85,7 @@ class CoreDataViewModel: ObservableObject {
         if let nextBirthday = Calendar.current.nextDate(after: currentDate, matching: birthdayDateComponents, matchingPolicy: .strict),
            let daysLeftUntilNextBirthday = Calendar.current.dateComponents([.day], from: currentDate, to: nextBirthday).day {
             // TODO : Ceiling
-            print("days left \(daysLeftUntilNextBirthday)")
+//            print("days left \(daysLeftUntilNextBirthday)")
             return Int32(daysLeftUntilNextBirthday)
         }
         return 0
@@ -123,7 +124,6 @@ class CoreDataViewModel: ObservableObject {
         return Calendar.current.date(from: reminderComponents) ?? Date()
     }
     
-    // TODO : this works only after closing and reopening the app
     func updateReminderDate() {
         print("update Reminder jalan")
         let request = NSFetchRequest<PersonEntity>(entityName: "PersonEntity")
@@ -132,13 +132,17 @@ class CoreDataViewModel: ObservableObject {
         do {
             savedPeople = try container.viewContext.fetch(request)
             for person in savedPeople {
-                container.viewContext.performAndWait {
-                    person.reminderDate = getReminderDate(birthday:person.birthday ?? today)
-                    try? container.viewContext.save()
-                }
+                updateDate(person: person)
             }
         } catch let error {
             print("ERROR UPDATING REMINDER DATE DATA REQUEST. \(error)")
+        }
+    }
+    
+    func updateDate(person: PersonEntity) {
+        container.viewContext.performAndWait {
+            person.reminderDate = getReminderDate(birthday: person.birthday ?? today)
+            try? container.viewContext.save()
         }
     }
     

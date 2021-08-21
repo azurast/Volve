@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingView: View {
-    @ObservedObject var vm = CoreDataViewModel()
+    @StateObject var vm : CoreDataViewModel
     @State var isNotificationsOn : Bool = UserSettingsManager.shared.getReminder()
     @State var selectedReminder : ReminderOptions = ReminderOptions(rawValue: UserSettingsManager.shared.getReminderDays()) ?? .theday
     
@@ -36,11 +36,5 @@ struct SettingView: View {
             }
             Text("testPushNotif".localized())
         }
-    }
-}
-
-struct SettingView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingView()
     }
 }

@@ -39,7 +39,7 @@ struct ContentView: View {
                         }
                     }, label: {Image.init(systemName: "gearshape")})
                     .overlay(
-                        NavigationLink(destination: SettingView(), isActive: $showSetting) { EmptyView()
+                        NavigationLink(destination: SettingView(vm: vm), isActive: $showSetting) { EmptyView()
                         })
                     Button(action: {
                         showModal.toggle()
