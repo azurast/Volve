@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1010D726D1DEE5000CB485 /* OptionalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1010D626D1DEE5000CB485 /* OptionalHelper.swift */; };
 		1B1517FF26CA481D0010A8D1 /* Volve.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B1517FD26CA481D0010A8D1 /* Volve.xcdatamodeld */; };
 		1B238F3426C913E600CAB2BA /* PersonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B238F3326C913E600CAB2BA /* PersonCard.swift */; };
 		1B3B4CBF26CA6B6400E220EA /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B4CBE26CA6B6400E220EA /* CardModifier.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B1010D626D1DEE5000CB485 /* OptionalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalHelper.swift; sourceTree = "<group>"; };
 		1B1517FE26CA481D0010A8D1 /* Volve.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Volve.xcdatamodel; sourceTree = "<group>"; };
 		1B238F3326C913E600CAB2BA /* PersonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCard.swift; sourceTree = "<group>"; };
 		1B3B4CBE26CA6B6400E220EA /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				1B3B4CD326CA73E900E220EA /* DateHelper.swift */,
 				FB14B44626CDC28800E07A46 /* NotificationManager.swift */,
 				FB14B44826CDCD1100E07A46 /* UserSettingsManager.swift */,
+				1B1010D626D1DEE5000CB485 /* OptionalHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B238F3426C913E600CAB2BA /* PersonCard.swift in Sources */,
+				1B1010D726D1DEE5000CB485 /* OptionalHelper.swift in Sources */,
 				FB14B44726CDC28800E07A46 /* NotificationManager.swift in Sources */,
 				1BCA0EEF26CB57790003EBC9 /* SettingViewModel.swift in Sources */,
 				1B3B4CBF26CA6B6400E220EA /* CardModifier.swift in Sources */,
