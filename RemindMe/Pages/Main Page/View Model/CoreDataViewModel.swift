@@ -146,4 +146,13 @@ class CoreDataViewModel: ObservableObject {
         }
     }
     
+    func updatePersonData(person: PersonEntity) {
+        do {
+            try container.viewContext.save()
+            fetchPeople()
+        } catch {
+            print("ERROR UPDATING PERSON DATA")
+        }
+    }
+    
 }

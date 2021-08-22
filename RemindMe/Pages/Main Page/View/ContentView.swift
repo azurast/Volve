@@ -20,7 +20,7 @@ struct ContentView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(vm.savedPeople.sorted(by: { $0.daysLeft < $1.daysLeft })) { entity in
-                        NavigationLink(destination: DetailView(person: entity)) {
+                        NavigationLink(destination: DetailView(vm: vm, person: entity)) {
                             PersonCard(person: entity).id(entity.id)
                         }
                     }
