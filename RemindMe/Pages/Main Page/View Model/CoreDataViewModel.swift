@@ -125,7 +125,6 @@ class CoreDataViewModel: ObservableObject {
     }
     
     func updateReminderDate() {
-        print("update Reminder jalan")
         let request = NSFetchRequest<PersonEntity>(entityName: "PersonEntity")
         let sort = NSSortDescriptor(keyPath: \PersonEntity.daysLeft, ascending: true)
         request.sortDescriptors = [sort]
@@ -146,12 +145,25 @@ class CoreDataViewModel: ObservableObject {
         }
     }
     
-    func updatePersonData(person: PersonEntity) {
+    func updateData(person: PersonEntity) {
         do {
             try container.viewContext.save()
             fetchPeople()
         } catch {
             print("ERROR UPDATING PERSON DATA")
+        }
+    }
+    
+    func deleteData(id: UUID) {
+        let request = NSFetchRequest<PersonEntity>(entityName: "PersonEntity")
+        let predicate = NSPredicate(format: "id == %@", id as CVarArg)
+        request.predicate = predicate
+        do {
+            let toDelete = try container.viewContext.fetch(request)
+            container.viewContext.delete(toDelete[0])
+            saveData()
+        } catch let error {
+            print("ERROR UPDATING REMINDER DATE DATA REQUEST. \(error)")
         }
     }
     

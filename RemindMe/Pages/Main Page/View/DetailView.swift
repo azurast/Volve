@@ -14,6 +14,7 @@ struct DetailView: View {
     @State var showAvatarOptions : Bool = false
     @State var selectedImageIndex : Int16 = 0
     @State var showAlert: Bool = false
+    @State var showDeleteAlert: Bool = false
     
     var formatter = createFormatter()
 
@@ -44,6 +45,7 @@ struct DetailView: View {
                             .frame(height: 16, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .cornerRadius(10)
                     }
+                    Text("Reminder set on \(formatter.string(from: person.reminderDate ?? Date()))").font(.caption)
                 }
             } else {
                 Form {
@@ -102,7 +104,18 @@ struct DetailView: View {
                     action: {
                         person.reminderDate = vm.getReminderDate(birthday: person.birthday ?? Date())
                         person.starSign = person.birthday?.StarSign()
-                        vm.updatePersonData(person: person)
+                        vm.updateData(person: person)
+                        isEditing = !isEditing
+                    }),
+                secondaryButton: .cancel())
+        }
+        .alert(isPresented: $showDeleteAlert) {
+            Alert(
+                title: Text("Delete this contact?"),
+                primaryButton: .destructive(
+                    Text("Yes"),
+                    action: {
+                        vm.deleteData(id: person.id!)
                         isEditing = !isEditing
                     }),
                 secondaryButton: .cancel())
@@ -111,16 +124,14 @@ struct DetailView: View {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 if !isEditing {
                     Button(action: {
-                        
-                    }, label: {
-                        Button(action: {}) {
-                            if !isEditing {
-                                Image.init(systemName: "trash")
-                            } else {
-                                
-                            }
+                        showDeleteAlert = true
+                    }) {
+                        if !isEditing {
+                            Image.init(systemName: "trash")
+                        } else {
+                            
                         }
-                    })
+                    }
                     Button(action: {
                         isEditing = !isEditing
                     }, label: {

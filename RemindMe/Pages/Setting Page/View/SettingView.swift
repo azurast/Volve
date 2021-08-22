@@ -28,13 +28,14 @@ struct SettingView: View {
                     Text("oneWeekBefore".localized()).tag(ReminderOptions.oneweek)
                     Text("twoWeeksBefore".localized()).tag(ReminderOptions.twoweeks)
                     Text("threeWeeksBefore".localized()).tag(ReminderOptions.threeweeks)
-                }.onChange(of: selectedReminder, perform: {
-                    value in
-                        UserSettingsManager.shared.setReminderDays(daysBefore: value)
-                    vm.updateReminderDate()
-                })
+                }.onChange( // TODO : Picker is Fetched Twice
+                    of: selectedReminder,
+                    perform: {
+                        value in UserSettingsManager.shared.setReminderDays(daysBefore: value);
+                        vm.updateReminderDate()
+                    })
             }
             Text("testPushNotif".localized())
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }

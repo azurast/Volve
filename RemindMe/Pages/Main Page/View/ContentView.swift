@@ -34,7 +34,6 @@ struct ContentView: View {
                             granted in
                             if granted {
                                 showSetting = true
-                                print("this block runs")
                             }
                         }
                     }, label: {Image.init(systemName: "gearshape")})
